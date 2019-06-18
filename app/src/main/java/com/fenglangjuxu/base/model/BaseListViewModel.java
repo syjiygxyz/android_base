@@ -36,7 +36,6 @@ public abstract class BaseListViewModel<T> extends BaseViewModel {
      */
     public final BindingRecyclerViewAdapter adapter = new BindingRecyclerViewAdapter();
 
-
     /**
      * View绑定
      */
@@ -66,6 +65,4 @@ public abstract class BaseListViewModel<T> extends BaseViewModel {
     protected abstract void loadData(int pageNo);
     protected abstract void initHeaderFooter(MergeObservableList<Object> headerFooterItems);
     protected abstract void initViewMapping(OnItemBindClass<Object> onItemBindClass);
-
-
 }
